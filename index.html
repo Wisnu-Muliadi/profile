@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Wisnu Muliadi</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐻</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+  </head>
+
+  <body>
+    <!-- HEADER Picture -->
+    <div class="head">
+      <img class='heading-img' src="pics/header.JPG" >
+    </div>
+    <div class="heading" id="myHeader">
+      <table align="center" style="width: 100%;" id="myHeader2">
+        <tr>
+          <td class="forth" id="data1">
+            <img src="assets/email.png" style="width: 16px;">
+            <a href="mailto:wisnumuliadi123@gmail.com" style="color: inherit;">wisnumuliadi123@gmail.com</a>
+          </td>
+          <td class="forth" id="data2" class="bori bole">
+            <img src="assets/whatsapp.png" style="width: 16px;">
+            <a href="https://wa.me/6281268041811" target="_blank" style="color: inherit;">+62 812 6804 1811</a>
+          </td>
+          <td class="forth" id="data3">
+            <img src="assets/games.png" style="width: 16px;margin: 4px;">
+            <a href="https://wisnu-muliadi.github.io/heart-caring" target="_blank" style="color:inherit;">CPR Simulation Mini-Game</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <hr style="margin-left:15%; margin-right:15%;">
+    
+    <!-- CONTENT Body -->
+    <div class="content">
+    <h2>Some of My Works</h2>
+    <img class="content-img" src="pics/1.png">
+    <img class="content-img" src="pics/2.png">
+    <img class="content-img" src="pics/3.png">
+    <img class="content-img" src="pics/4.png">
+    
+    <hr>
+
+    <!-- VIDEO Body -->
+    <h2 align="center">Video!</h2>
+    <video autoplay loop controls muted>
+      <source src="pics/5.mp4" type="video/mp4">
+    </video>
+    <h2 align="center">Warning! Creepy Loud Voices (SORRY)</h2>
+    <video autoplay loop controls muted>
+      <source src="pics/6.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <!-- Sticky Header Function -->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var data1 = document.getElementById("data1");
+    var data2 = document.getElementById("data2");
+    var data3 = document.getElementById("data3");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        data1.classList.add("secondary");
+        data2.classList.add("secondary");
+        data3.classList.add("secondary");
+      } else {
+        header.classList.remove("sticky");
+        data1.classList.remove("secondary");
+        data2.classList.remove("secondary");
+        data3.classList.remove("secondary");
+      }
+    }
+    </script>
+
+  </body>
+</html>

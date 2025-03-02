@@ -1,0 +1,108 @@
+:root{
+    --primary-color:#2A2D34;
+    --secondary-color:#009ddb;
+    --tertiary-color:#F26430;
+    --forth-color:#6761a8;
+    --fifth-color:#009B72;
+}
+
+.head{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+}
+.heading{
+    transition: 0.5s;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.content{
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.sticky {
+    transition: 0.5s;
+    position: fixed;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--tertiary-color);
+    top: 0;
+    width: 70%;
+}
+.sticky + hr + .content {
+    padding-top: 36px;
+}
+
+body {
+    margin: 0;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    background-color: #ffffff88;
+    background-blend-mode: lighten;
+    background-image: url(./assets/background-vectoroartworks.jpg);
+    background-size: 25%;
+}
+div.container{
+    font-family: "Josefin Sans";
+    color:var(--forth-color);
+}
+div.description{
+    font-family: "Josefin Sans";
+}
+img.heading-img {
+    border: 8px solid #aaddff99;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+img.content-img {
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 25px;
+    width: 75%;
+}
+video {
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 500px;
+    max-width: 100%;
+    
+}
+p{
+    font-family: "Josefin Sans";
+}
+hr {
+    border-top: 2px dashed var(--primary-color);
+}
+table tr td{
+    font-family: Volkhov;
+    font-size: 16px;
+    text-align: center;
+    text-anchor: middle;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+td.forth{
+    color: var(--forth-color);
+}
+td.secondary{
+    color: var(--secondary-color);
+}
+.bori{
+    border-right: 1px solid var(--primary-color);
+}
+.bole{
+    border-left: 1px solid var(--primary-color);
+}
