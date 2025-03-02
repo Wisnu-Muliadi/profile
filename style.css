@@ -5,8 +5,14 @@
     --forth-color:#6761a8;
     --fifth-color:#009B72;
 }
-
+h3{
+    color: var(--secondary-color);
+}
+h4{
+    color: var(--primary-color);
+}
 .head{
+    margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
     max-width: 640px;
@@ -16,30 +22,35 @@
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15%;
-    padding-right: 15%;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 .content{
     margin-top: 36px;
     margin-bottom: 36px;
-    margin-left: 15%;
-    margin-right: 15%;
+    max-width: 1000px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .sticky {
     transition: 0.5s;
-    position: fixed;
+    position:fixed;
     padding-top: 12px;
     padding-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     background-color: var(--tertiary-color);
     top: 0;
-    width: 70%;
 }
 .sticky + hr + .content {
     padding-top: 36px;
 }
-
+a:hover{
+    color: var(--forth-color) !important;
+}
 body {
     margin: 0;
     font-family: "Josefin Sans";
@@ -50,11 +61,8 @@ body {
     background-size: 25%;
 }
 div.container{
-    font-family: "Josefin Sans";
-    color:var(--forth-color);
-}
-div.description{
-    font-family: "Josefin Sans";
+    display:flex;
+    align-items:flex-start;
 }
 img.heading-img {
     border: 8px solid #aaddff99;
@@ -71,38 +79,61 @@ img.content-img {
     width: 75%;
 }
 video {
-    border-radius: 20px;
     display: block;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
     max-height: 500px;
     max-width: 100%;
-    
+}
+video.left {
+    float:left;
+    width: 75%;
+}
+video.right {
+    margin-left: auto;
+    float:right;
+    width: 75%;
+}
+video.center {
+    border-radius: 20px;
+    margin-left:auto;
+    margin-right:auto;
 }
 p{
+    display:block;
+    color: var(--fifth-color);
+    background-color: #fff;
+    padding: 12px;
+    font-size: 20px;
     font-family: "Josefin Sans";
 }
 hr {
     border-top: 2px dashed var(--primary-color);
 }
-table tr td{
+table{
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+td{
     font-family: Volkhov;
-    font-size: 16px;
+    font-size: clamp(2rem, 5vw+1rem, 7rem);
     text-align: center;
     text-anchor: middle;
     vertical-align: middle;
     transition: 0.5s;
 }
 td.forth{
-    color: var(--forth-color);
+    color: var(--tertiary-color);
 }
 td.secondary{
-    color: var(--secondary-color);
+    color: whitesmoke;
 }
-.bori{
-    border-right: 1px solid var(--primary-color);
+td.bori{
+    border-right: 1px solid #000;
 }
-.bole{
-    border-left: 1px solid var(--primary-color);
+td.bole{
+    border-left: 1px solid #000;
 }
