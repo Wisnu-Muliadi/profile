@@ -85,6 +85,7 @@ video {
     margin-bottom: 12px;
     max-height: 500px;
     max-width: 100%;
+    z-index: -100;
 }
 video.left {
     float:left;
